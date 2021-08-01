@@ -2,3 +2,12 @@ body{
     margin: 0;
     text-align: center;
 }
+
+#heading{
+    margin-top: 24px;
+    text-align: center;
+    color: lightslategray;
+    font-size: 32px;
+    font-family: 'MonteCarlo', cursive;
+    font-weight: bold;
+}
