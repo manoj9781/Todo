@@ -23,15 +23,17 @@
     <header id="heading">Todo App</header>
     <div class="container">
       <div class="descripton">
-        <form action="/create-task" method="post">
-          <label for="Descripton">Descripton</label>
-          <input
-            type="text"
-            name="task"
-            placeholder="What do you need to do ?"
-            required
-            autocomplete="off"
-          />
+        <div class="description-input">
+          <form action="/create-task" method="post">
+            <label for="Descripton">Descripton</label>
+            <input
+              type="text"
+              name="task"
+              placeholder="What do you need to do ?"
+              required
+              autocomplete="off" 
+            />
+        </div>
           <label for="">Category</label>
           <select name="category" required>
             <option value="personal">Personal</option>
@@ -42,9 +44,9 @@
           </select>
           <label for="date">Due Date</label>
           <input type="date" name="date" required />
+         </div>
           <button type="submit">+ Add</button>
         </form>
-      </div>
       <ul>
         <% for(i of task_list){%>
         <li>
